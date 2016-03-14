@@ -1,0 +1,10 @@
+H:\NewDirectXTK_SW\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
+H:\NewDirectXTK_SW\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
+H:\NewDirectXTK_SW\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
+H:\NewDirectXTK_SW\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
+H:\NewDirectXTK_SW\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb
+F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
+F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
+F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
+F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
+F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb

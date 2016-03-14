@@ -1,0 +1,17 @@
+﻿Build started 13/03/2016 23:36:36.
+     1>Project "F:\NewDirectXTK\NewDirectXTK\Assets\Assets.vcxproj" on node 2 (Rebuild target(s)).
+     1>_ImageContentTask:
+         logo_small.png
+         white.jpg
+         grass.jpg
+         MinecraftBucket.png
+         sandParticle.png
+       _MeshContentTask:
+         BirdModelV1.fbx
+         JEMINA vase -up.fbx
+         table.FBX
+     1>Done Building Project "F:\NewDirectXTK\NewDirectXTK\Assets\Assets.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.60
