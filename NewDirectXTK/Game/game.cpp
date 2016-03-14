@@ -86,7 +86,7 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance, ID3D11De
 	m_DD->m_light = m_light;
 
 	//Add emitter that can be controlled by the mouse
-	Emitter* testEmitter = new Emitter("MinecraftBucket", _pd3dDevice, 5, "logo_small");
+	Emitter* testEmitter = new Emitter("MinecraftBucket", _pd3dDevice, 10, "MinecraftBucket");
 	testEmitter->SetPos(Vector2(400, 300));
 	m_GameObject2Ds.push_back(testEmitter);
 

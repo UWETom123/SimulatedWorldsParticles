@@ -35,6 +35,7 @@ public:
 
 protected:
 	Vector2 m_pos;
+	Vector2 m_dir;
 	float m_rotation;
 	Vector2 m_scale;
 	Color m_colour;

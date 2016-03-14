@@ -49,18 +49,18 @@ void Emitter::Tick(GameData* _GD)
 		{
 			if (!particle->isAlive())
 			{
-				Vector2 particlePos = Vector2::Zero;
-				Vector2 particleDir = Vector2::Zero;
+				Vector2 particlePos = m_pos;
+				Vector2 particleDir = Vector2::One;
 
 				//Sets the direction of travel for the particle
 
 				particlePos = Vector2::Transform(particlePos, m_worldMat);
-				particleDir = Vector2::Transform(particleDir, m_worldMat) - particlePos;
+				particleDir = Vector2::Transform(particleDir, m_worldMat) - m_pos ;
 				particleDir.Normalize();
 				particlePos.Normalize();
-				particle->Spawn(3.0f, particlePos, particleDir);
+				particle->Spawn(3.0f, m_pos, particleDir);
 
-				break;
+				
 			}
 		}
 

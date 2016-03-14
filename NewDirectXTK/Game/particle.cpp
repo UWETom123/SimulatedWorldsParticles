@@ -22,7 +22,7 @@ void Particle::tick(GameData* _GD)
 			return;
 		}
 
-		float speed = 20.0f;
+		float speed = 100.0f;
 
 		m_pos += speed * _GD->m_dt * m_dir;
 
