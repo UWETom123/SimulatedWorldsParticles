@@ -8,7 +8,7 @@ class Particle : public ImageGO2D
 {
 
 public:
-	Particle(string _fileName, ID3D11Device* _GD);
+	Particle(string _fileName, float _speed, ID3D11Device* _GD);
 	~Particle();
 
 	void Spawn(float _life, Vector2 _pos, Vector2 _dir);
@@ -17,6 +17,8 @@ public:
 	virtual void draw(DrawData2D* _DD);
 
 	bool isAlive(){ return m_alive; }
+
+	float speed;
 
 private:
 

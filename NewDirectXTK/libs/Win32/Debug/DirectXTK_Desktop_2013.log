@@ -1,9 +1,9 @@
-﻿Build started 14/03/2016 14:34:22.
-     1>Project "D:\TomMoreton\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" on node 2 (Build target(s)).
+﻿Build started 16/03/2016 15:05:16.
+     1>Project "F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" on node 2 (Build target(s)).
      1>Lib:
-         DirectXTK_Desktop_2013.vcxproj -> D:\TomMoreton\SimulatedWorldsParticles\NewDirectXTK\libs\Win32\Debug\DirectXTK.lib
-     1>Done Building Project "D:\TomMoreton\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" (Build target(s)).
+         DirectXTK_Desktop_2013.vcxproj -> F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\libs\Win32\Debug\DirectXTK.lib
+     1>Done Building Project "F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:06.36

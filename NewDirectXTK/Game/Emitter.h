@@ -7,7 +7,7 @@
 class Emitter :public ImageGO2D
 {
 public:
-	Emitter(string _fileName, ID3D11Device* _GD, int _numParticles, string _particleName);
+	Emitter(string _fileName, ID3D11Device* _GD, int _numParticles, float _life, float _speed, string _particleName);
 	virtual ~Emitter();
 
 	virtual void Tick(GameData* _GD);
@@ -15,9 +15,10 @@ public:
 
 	list<Particle*> myParticles;
 
+	float life;
+
 protected:
 
-	GameObject2D* m_parent;
 	ID3D11ShaderResourceView* m_pTextureRV;
 
 };

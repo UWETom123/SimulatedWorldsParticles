@@ -1,9 +1,10 @@
 #include "particle.h"
 
-Particle::Particle(string _fileName, ID3D11Device* _GD) : ImageGO2D(_fileName, _GD)
+Particle::Particle(string _fileName, float _speed, ID3D11Device* _GD) : ImageGO2D(_fileName, _GD)
 {
 	m_alive = false;
 	m_lifeLeft = 0.0f;
+	speed = _speed;
 }
 
 Particle::~Particle()
@@ -21,8 +22,6 @@ void Particle::tick(GameData* _GD)
 			m_alive = false;
 			return;
 		}
-
-		float speed = 100.0f;
 
 		m_pos += speed * _GD->m_dt * m_dir;
 

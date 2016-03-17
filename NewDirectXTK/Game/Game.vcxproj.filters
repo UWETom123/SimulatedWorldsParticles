@@ -115,10 +115,10 @@
     <ClInclude Include="particleManager.h">
       <Filter>Objects\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="particle.h">
-      <Filter>Objects\Source</Filter>
-    </ClInclude>
     <ClInclude Include="Emitter.h">
+      <Filter>Objects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="particle.h">
       <Filter>Objects\Headers</Filter>
     </ClInclude>
   </ItemGroup>
