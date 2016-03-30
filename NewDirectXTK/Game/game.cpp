@@ -10,11 +10,20 @@
 #include <time.h>
 #include "DDSTextureLoader.h"
 #include <d3d11shader.h>
+#include <AntTweakBar.h>
 
 using namespace DirectX;
 
 Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance, ID3D11DeviceContext* context) :m_playTime(0), m_fxFactory(nullptr), m_states(nullptr)
 {
+
+	TwInit(TW_DIRECT3D11, _pd3dDevice); 
+
+	TwWindowSize(800, 600);
+
+	TwBar *myBar;
+	myBar = TwNewBar("ParticleGUI");
+
 	//Create DirectXTK spritebatch stuff
 	ID3D11DeviceContext* pd3dImmediateContext;
 	_pd3dDevice->GetImmediateContext(&pd3dImmediateContext);
@@ -85,11 +94,17 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance, ID3D11De
 	m_DD->m_cam = m_cam;
 	m_DD->m_light = m_light;
 
+	float lifetime;
+
+	lifetime = 3;
+
 	//Add emitter that can be controlled by the mouse
-	Emitter* testEmitter = new Emitter("MinecraftBucket", _pd3dDevice, 10, 3, 100, "sandParticle");
+	Emitter* testEmitter = new Emitter("MinecraftBucket", _pd3dDevice, 10, lifetime, 100, "sandParticle");
 	testEmitter->SetRot(3.14159f);
 	testEmitter->SetPos(Vector2(400, 300));
 	m_GameObject2Ds.push_back(testEmitter);
+
+	TwAddVarRW(myBar, "Lifetime", TW_TYPE_FLOAT, &lifetime, "");
 
 //
 //	//add a secondary camera
@@ -215,6 +230,8 @@ bool Game::Update()
 	GetWindowRect(m_hWnd, &window);
 	SetCursorPos((window.left+window.right)>>1, (window.bottom+window.top)>>1);
 
+	
+
 	//calculate frame time-step dt for passing down to game objects
 	DWORD currentTime = GetTickCount();
 	m_GD->m_dt = min((float)(currentTime - m_playTime) / 1000.0f, 0.1f);
@@ -261,6 +278,8 @@ void Game::Render(ID3D11DeviceContext* _pd3dImmediateContext)
 		(*it)->Draw(m_DD2D);
 	}
 	m_DD2D->m_Sprites->End();
+
+	TwDraw();
 
 	//drawing text screws up the Depth Stencil State, this puts it back again!
 	_pd3dImmediateContext->OMSetDepthStencilState(m_states->DepthDefault(), 0);

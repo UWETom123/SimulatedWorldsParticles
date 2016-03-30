@@ -1,20 +1,20 @@
-﻿Build started 16/03/2016 17:57:15.
-     1>Project "F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" on node 2 (Build target(s)).
+﻿Build started 30/03/2016 16:32:47.
+     1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Inc /ZI /nologo /W4 /WX- /Od /Oi /Oy- /D WIN32 /D _DEBUG /D DEBUG /D PROFILE /D _WINDOWS /D _WIN32_WINNT=0x0600 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  game.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Inc /ID:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\\AntTweakBar_116\AntTweakBar\include /ZI /nologo /W4 /WX- /Od /Oi /Oy- /D WIN32 /D _DEBUG /D DEBUG /D PROFILE /D _WINDOWS /D _WIN32_WINNT=0x0600 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  game.cpp
          game.cpp
          c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer' : structure was padded due to __declspec(align())
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\vbspiral.h(17): warning C4018: '<' : signed/unsigned mismatch
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\vbspiked.h(17): warning C4018: '<' : signed/unsigned mismatch
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\vbpillow.h(18): warning C4018: '<' : signed/unsigned mismatch
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\vbpillow.h(28): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\terrain.h(13): warning C4100: '_GD' : unreferenced formal parameter
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer' : structure was padded due to __declspec(align())
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\vbspiral.h(17): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\vbspiked.h(17): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\vbpillow.h(18): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\vbpillow.h(28): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\terrain.h(13): warning C4100: '_GD' : unreferenced formal parameter
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\helper.h(19): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(528) : see declaration of 'mbstowcs'
-     1>f:\particlesystem\simulatedworldsparticles\newdirectxtk\game\game.cpp(16): warning C4100: 'context' : unreferenced formal parameter
+     1>d:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\game\game.cpp(17): warning C4100: 'context' : unreferenced formal parameter
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe" /INCREMENTAL /NOLOGO d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib dinput8.lib DirectXTK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib usp10.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\\AntTweakBar_116\AntTweakBar\lib AntTweakBar64.lib d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib dinput8.lib DirectXTK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib usp10.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
          Debug\camera.obj
          Debug\CMOGO.obj
          Debug\Emitter.obj
@@ -31,10 +31,9 @@
          Debug\terrain.obj
          Debug\Player.obj
          Debug\VBGO.obj
-     1>camera.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-         Game.vcxproj -> F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe
-     1>Done Building Project "F:\ParticleSystem\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" (Build target(s)).
+         Game.vcxproj -> D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe
+     1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.90
+Time Elapsed 00:00:02.34
