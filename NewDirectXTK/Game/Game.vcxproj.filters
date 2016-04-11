@@ -49,6 +49,15 @@
     <ClCompile Include="Emitter.cpp">
       <Filter>Objects\Source</Filter>
     </ClCompile>
+    <ClCompile Include="SprayEmitter.cpp">
+      <Filter>Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamEmitter.cpp">
+      <Filter>Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BurstEmitter.cpp">
+      <Filter>Objects\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h" />
@@ -119,6 +128,15 @@
       <Filter>Objects\Headers</Filter>
     </ClInclude>
     <ClInclude Include="particle.h">
+      <Filter>Objects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SprayEmitter.h">
+      <Filter>Objects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamEmitter.h">
+      <Filter>Objects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BurstEmitter.h">
       <Filter>Objects\Headers</Filter>
     </ClInclude>
   </ItemGroup>

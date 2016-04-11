@@ -17,6 +17,7 @@ public:
 	virtual void draw(DrawData2D* _DD);
 
 	bool isAlive(){ return m_alive; }
+	float getLifeLeft() const{ return m_lifeLeft; }
 
 	float speed;
 

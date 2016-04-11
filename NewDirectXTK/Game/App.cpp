@@ -55,7 +55,7 @@ HRESULT App::InitWindow( HINSTANCE _hInstance, int _nCmdShow )
 #ifdef DEBUG
     RECT rc = { 0, 0, 800, 600 };
     AdjustWindowRect( &rc, WS_OVERLAPPEDWINDOW, FALSE );
-    m_hWnd = CreateWindow( L"GEAWindowClass", L"GEA GROUP PROJECT", WS_OVERLAPPEDWINDOW,
+    m_hWnd = CreateWindow( L"GEAWindowClass", L"Particle simulation", WS_OVERLAPPEDWINDOW,
                            600, 100, rc.right - rc.left, rc.bottom - rc.top, nullptr, nullptr, _hInstance,
                            nullptr );
 #else
