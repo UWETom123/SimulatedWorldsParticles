@@ -9,7 +9,6 @@ StreamEmitter::StreamEmitter(string _fileName, ID3D11Device* _GD, int _numPartic
 				Emitter(_fileName, _GD, _numParticles, _rate, _life, _speed, _particleName)
 {
 	spawnTimer = 0;
-
 }
 
 void StreamEmitter::Tick(GameData* _GD)

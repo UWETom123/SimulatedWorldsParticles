@@ -1,5 +1,5 @@
-﻿Build started 11/04/2016 18:07:23.
-     1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Audio\DirectXTKAudio_Desktop_2013_Win8.vcxproj" on node 5 (Rebuild target(s)).
+﻿Build started 11/04/2016 23:04:00.
+     1>Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Audio\DirectXTKAudio_Desktop_2013_Win8.vcxproj" on node 5 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Inc /I..\Src /ZI /nologo /W4 /WX- /Od /Oy- /D _WIN32_WINNT=0x0602 /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"libs\Win32\Debug\DirectXTKAudioWin8.pch" /Fo"libs\Win32\Debug\\" /Fd"libs\Win32\Debug\DirectXTKAudioWin8.pdb" /Gd /TP /analyze- /errorReport:prompt AudioEngine.cpp
          AudioEngine.cpp
@@ -12,7 +12,6 @@
          SoundCommon.cpp
          DynamicSoundEffectInstance.cpp
          Generating Code...
-     1>cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"libs\Win32\Debug\DirectXTKAudioWin8.lib" /NOLOGO libs\Win32\Debug\AudioEngine.obj
          libs\Win32\Debug\DynamicSoundEffectInstance.obj
@@ -22,9 +21,9 @@
          libs\Win32\Debug\WaveBank.obj
          libs\Win32\Debug\WaveBankReader.obj
          libs\Win32\Debug\WAVFileReader.obj
-         DirectXTKAudio_Desktop_2013_Win8.vcxproj -> D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Audio\libs\Win32\Debug\DirectXTKAudioWin8.lib
-     1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Audio\DirectXTKAudio_Desktop_2013_Win8.vcxproj" (Rebuild target(s)).
+         DirectXTKAudio_Desktop_2013_Win8.vcxproj -> F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Audio\libs\Win32\Debug\DirectXTKAudioWin8.lib
+     1>Done Building Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Audio\DirectXTKAudio_Desktop_2013_Win8.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.98
+Time Elapsed 00:00:04.32

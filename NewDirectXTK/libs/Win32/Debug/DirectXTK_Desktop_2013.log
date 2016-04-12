@@ -1,9 +1,9 @@
-﻿Build started 11/04/2016 18:07:23.
-     1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 11/04/2016 23:04:00.
+     1>Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Inc /ZI /nologo /W4 /WX- /Od /Oy- /D _WIN32_WINNT=0x0600 /D _WIN7_PLATFORM_UPDATE /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"libs\Win32\Debug\DirectXTK.pch" /Fo"libs\Win32\Debug\\" /Fd"libs\Win32\Debug\DirectXTK.pdb" /Gd /TP /analyze- /errorReport:prompt Src\pch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IF:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Inc /ZI /nologo /W4 /WX- /Od /Oy- /D _WIN32_WINNT=0x0600 /D _WIN7_PLATFORM_UPDATE /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"libs\Win32\Debug\DirectXTK.pch" /Fo"libs\Win32\Debug\\" /Fd"libs\Win32\Debug\DirectXTK.pdb" /Gd /TP /analyze- /errorReport:prompt Src\pch.cpp
          pch.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Inc /ZI /nologo /W4 /WX- /Od /Oy- /D _WIN32_WINNT=0x0600 /D _WIN7_PLATFORM_UPDATE /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"libs\Win32\Debug\DirectXTK.pch" /Fo"libs\Win32\Debug\\" /Fd"libs\Win32\Debug\DirectXTK.pdb" /Gd /TP /analyze- /errorReport:prompt Src\AlphaTestEffect.cpp Src\BasicEffect.cpp Src\CommonStates.cpp Src\DDSTextureLoader.cpp Src\DGSLEffect.cpp Src\DGSLEffectFactory.cpp Src\DualTextureEffect.cpp Src\BinaryReader.cpp Src\EffectCommon.cpp Src\EffectFactory.cpp Src\EnvironmentMapEffect.cpp Src\GamePad.cpp Src\GeometricPrimitive.cpp Src\Keyboard.cpp Src\Model.cpp Src\ModelLoadCMO.cpp Src\ModelLoadSDKMESH.cpp Src\ModelLoadVBO.cpp Src\Mouse.cpp Src\ScreenGrab.cpp Src\SimpleMath.cpp Src\SkinnedEffect.cpp Src\SpriteBatch.cpp Src\PrimitiveBatch.cpp Src\SpriteFont.cpp Src\VertexTypes.cpp Src\WICTextureLoader.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IF:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Inc /ZI /nologo /W4 /WX- /Od /Oy- /D _WIN32_WINNT=0x0600 /D _WIN7_PLATFORM_UPDATE /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"libs\Win32\Debug\DirectXTK.pch" /Fo"libs\Win32\Debug\\" /Fd"libs\Win32\Debug\DirectXTK.pdb" /Gd /TP /analyze- /errorReport:prompt Src\AlphaTestEffect.cpp Src\BasicEffect.cpp Src\CommonStates.cpp Src\DDSTextureLoader.cpp Src\DGSLEffect.cpp Src\DGSLEffectFactory.cpp Src\DualTextureEffect.cpp Src\BinaryReader.cpp Src\EffectCommon.cpp Src\EffectFactory.cpp Src\EnvironmentMapEffect.cpp Src\GamePad.cpp Src\GeometricPrimitive.cpp Src\Keyboard.cpp Src\Model.cpp Src\ModelLoadCMO.cpp Src\ModelLoadSDKMESH.cpp Src\ModelLoadVBO.cpp Src\Mouse.cpp Src\ScreenGrab.cpp Src\SimpleMath.cpp Src\SkinnedEffect.cpp Src\SpriteBatch.cpp Src\PrimitiveBatch.cpp Src\SpriteFont.cpp Src\VertexTypes.cpp Src\WICTextureLoader.cpp
          WICTextureLoader.cpp
          VertexTypes.cpp
          SpriteFont.cpp
@@ -63,9 +63,9 @@
          libs\Win32\Debug\SpriteFont.obj
          libs\Win32\Debug\VertexTypes.obj
          libs\Win32\Debug\WICTextureLoader.obj
-         DirectXTK_Desktop_2013.vcxproj -> D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\libs\Win32\Debug\DirectXTK.lib
-     1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" (Rebuild target(s)).
+         DirectXTK_Desktop_2013.vcxproj -> F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\libs\Win32\Debug\DirectXTK.lib
+     1>Done Building Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:07.67
+Time Elapsed 00:00:09.32

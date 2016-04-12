@@ -19,6 +19,16 @@ public:
 
 	float rate;
 
+	struct EmitterParameters
+	{
+
+		int _numParticles;
+		float _rate;
+		float _life;
+		float _speed;
+
+	};
+
 protected:
 
 	float time;

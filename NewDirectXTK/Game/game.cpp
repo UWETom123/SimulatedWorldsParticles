@@ -13,6 +13,7 @@
 #include <AntTweakBar.h>
 #include "SprayEmitter.h"
 #include "StreamEmitter.h"
+#include "BurstEmitter.h"
 
 using namespace DirectX;
 
@@ -101,7 +102,7 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance, ID3D11De
 	lifetime = 6;
 
 	//Add emitter that can be controlled by the mouse
-	Emitter* testEmitter = new StreamEmitter("MinecraftBucket", _pd3dDevice, 200, 20, lifetime, 100, "logo_small");
+	Emitter* testEmitter = new BurstEmitter("MinecraftBucket", _pd3dDevice, 1000, 20, 2, 8, 50, 100, "sandParticle");
 	testEmitter->SetRot(3.14159f);
 	testEmitter->SetPos(Vector2(400, 300));
 	m_GameObject2Ds.push_back(testEmitter);

@@ -1,7 +1,12 @@
-﻿Build started 11/04/2016 18:28:25.
-     1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\\AntTweakBar_116\AntTweakBar\lib AntTweakBar64.lib d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib dinput8.lib DirectXTK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib usp10.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
+﻿Build started 12/04/2016 01:05:50.
+     1>Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Inc /IF:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\\AntTweakBar_116\AntTweakBar\include /ZI /nologo /W4 /WX- /Od /Oi /Oy- /D WIN32 /D _DEBUG /D DEBUG /D PROFILE /D _WINDOWS /D _WIN32_WINNT=0x0600 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  BurstEmitter.cpp
+         BurstEmitter.cpp
+         c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\\AntTweakBar_116\AntTweakBar\lib AntTweakBar64.lib d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib dinput8.lib DirectXTK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib usp10.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
+         Debug\BurstEmitter.obj
          Debug\camera.obj
          Debug\CMOGO.obj
          Debug\Emitter.obj
@@ -13,18 +18,15 @@
          Debug\light.obj
          Debug\main.obj
          Debug\particle.obj
-         Debug\particleManager.obj
          Debug\SprayEmitter.obj
          Debug\StreamEmitter.obj
          Debug\TextGO2D.obj
          Debug\terrain.obj
          Debug\Player.obj
          Debug\VBGO.obj
-         LINK : D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe not found or not built by the last incremental link; performing full link
-     1>camera.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-         Game.vcxproj -> D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe
-     1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" (Build target(s)).
+         Game.vcxproj -> F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe
+     1>Done Building Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.55
+Time Elapsed 00:00:01.57

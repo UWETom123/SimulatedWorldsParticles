@@ -40,9 +40,6 @@
     <ClCompile Include="TextGO2D.cpp">
       <Filter>Objects\2D\Source</Filter>
     </ClCompile>
-    <ClCompile Include="particleManager.cpp">
-      <Filter>Objects\Source</Filter>
-    </ClCompile>
     <ClCompile Include="particle.cpp">
       <Filter>Objects\Source</Filter>
     </ClCompile>
@@ -120,9 +117,6 @@
     </ClInclude>
     <ClInclude Include="TextGO2D.h">
       <Filter>Objects\2D\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="particleManager.h">
-      <Filter>Objects\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Emitter.h">
       <Filter>Objects\Headers</Filter>

@@ -1,5 +1,5 @@
-﻿Build started 11/04/2016 18:07:23.
-     1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Assets\Assets.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 11/04/2016 23:04:00.
+     1>Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Assets\Assets.vcxproj" on node 2 (Rebuild target(s)).
      1>_ImageContentTask:
          logo_small.png
          white.jpg
@@ -10,8 +10,8 @@
          BirdModelV1.fbx
          JEMINA vase -up.fbx
          table.FBX
-     1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Assets\Assets.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\Assets\Assets.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:08.20
+Time Elapsed 00:00:08.15

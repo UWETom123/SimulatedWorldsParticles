@@ -366,7 +366,6 @@
     <ClCompile Include="light.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="particle.cpp" />
-    <ClCompile Include="particleManager.cpp" />
     <ClCompile Include="SprayEmitter.cpp" />
     <ClCompile Include="StreamEmitter.cpp" />
     <ClCompile Include="TextGO2D.cpp" />
@@ -393,7 +392,6 @@
     <ClInclude Include="light.h" />
     <ClInclude Include="ObjectList.h" />
     <ClInclude Include="particle.h" />
-    <ClInclude Include="particleManager.h" />
     <ClInclude Include="SprayEmitter.h" />
     <ClInclude Include="StreamEmitter.h" />
     <ClInclude Include="TextGO2D.h" />
