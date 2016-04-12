@@ -101,13 +101,31 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance, ID3D11De
 
 	lifetime = 6;
 
-	//Add emitter that can be controlled by the mouse
-	Emitter* testEmitter = new BurstEmitter("MinecraftBucket", _pd3dDevice, 1000, 20, 2, 8, 50, 100, "sandParticle");
+	//Adds a new BurstEmitter called testEmitter that has a modifiable burst rate and also allows you to change the amount of particles per burst as well as the standard Emitter parameters
+	Emitter* testEmitter = new BurstEmitter("sandParticle", _pd3dDevice, 1000, 20, 2, 5, 50, 100, "sandParticle");
+	//Rotates the Emitter 180 degrees (pi in radians)
 	testEmitter->SetRot(3.14159f);
+	//Starts the Emitter at the centre of the screen
 	testEmitter->SetPos(Vector2(400, 300));
 	m_GameObject2Ds.push_back(testEmitter);
 
+	Emitter* testEmitter1 = new SprayEmitter("sandParticle", _pd3dDevice, 1000, 20, 5, 50, 30, "sandParticle");
+	//Rotates the Emitter 180 degrees (pi in radians)
+	testEmitter1->SetRot(3.14159f);
+	//Starts the Emitter at the centre of the screen
+	testEmitter1->SetPos(Vector2(500, 300));
+	m_GameObject2Ds.push_back(testEmitter1);
+
+	Emitter* testEmitter2 = new StreamEmitter("sandParticle", _pd3dDevice, 1000, 20, 5, 50, "sandParticle");
+	//Rotates the Emitter 180 degrees (pi in radians)
+	testEmitter2->SetRot(3.14159f);
+	//Starts the Emitter at the centre of the screen
+	testEmitter2->SetPos(Vector2(600, 300));
+	m_GameObject2Ds.push_back(testEmitter2);
+
 	TwAddVarRW(myBar, "Lifetime", TW_TYPE_FLOAT, &lifetime, "");
+
+
 
 //
 //	//add a secondary camera

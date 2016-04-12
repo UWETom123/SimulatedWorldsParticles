@@ -14,8 +14,10 @@ Particle::~Particle()
 
 void Particle::tick(GameData* _GD)
 {
+	//If the particle is alive continue to tick
 	if (m_alive)
 	{
+		//Calculates lifeleft based on the time currently taken
 		m_lifeLeft -= _GD->m_dt;
 		if (m_lifeLeft < 0.0f)
 		{
@@ -23,6 +25,7 @@ void Particle::tick(GameData* _GD)
 			return;
 		}
 
+		//Calculates velocity based on speed
 		m_pos += speed * _GD->m_dt * m_dir;
 
 		ImageGO2D::Tick(_GD);
@@ -33,6 +36,7 @@ void Particle::tick(GameData* _GD)
 
 void Particle::draw(DrawData2D* _DD)
 {
+	//Draw the particle if alive
 	if (m_alive)
 	{
 		ImageGO2D::Draw(_DD);

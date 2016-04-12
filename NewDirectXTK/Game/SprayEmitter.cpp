@@ -12,7 +12,6 @@ SprayEmitter::SprayEmitter(string _fileName, ID3D11Device* _GD, int _numParticle
 void SprayEmitter::Tick(GameData* _GD)
 {
 	spawnTimer += _GD->m_dt;
-	//Loads in particles
 
 	while (spawnTimer > 1.f / rate)
 	{
@@ -22,6 +21,8 @@ void SprayEmitter::Tick(GameData* _GD)
 			if (!particle->isAlive())
 			{
 				/*srand(time(NULL));*/
+
+				//Applies a random offset depending on the user's specified spread
 				
 				float randomXOffset = (rand() % (int)spread) - spread/2.f;
 				//float randomYOffset = 0; // rand() % 10;
@@ -36,11 +37,15 @@ void SprayEmitter::Tick(GameData* _GD)
 
 				particlePos = Vector2::Transform(particlePos, m_worldMat);
 				//particleDir = Vector2::Transform(particleDir, m_worldMat) - m_pos;
+
+				//Modifies Particle direction based on the random offset calculated above
 				particleDir = Vector2::Transform(particleDir, Matrix::CreateRotationZ(randomXOffset * 3.142f / 180.0f));
 				particlePos.Normalize();
 				particleDir.Normalize();
+				//Spawns the particle based on the values calculated above
 				particle->Spawn(life, m_pos, particleDir);
 				particleSpawned = true;
+				//Calculates the spawntimer based on the user defined rate
 				spawnTimer -= 1.f / rate;
 				break;
 			}

@@ -1,5 +1,6 @@
 #include "StreamEmitter.h"
 
+//Compares particles based on the amount of lifetime remaining
 bool compareParticles(const Particle* _first, const Particle* _second)
 {
 	return _first->getLifeLeft() < _second->getLifeLeft();
@@ -14,11 +15,11 @@ StreamEmitter::StreamEmitter(string _fileName, ID3D11Device* _GD, int _numPartic
 void StreamEmitter::Tick(GameData* _GD)
 {
 	spawnTimer += _GD->m_dt;
-	//Loads in particles
 
 	while (spawnTimer > 1.f / rate)
 	{
 		bool particleSpawned = false;
+		//Iterates through the particle list 
 		for (Particle* particle : myParticles)
 		{
 			if (!particle->isAlive())
@@ -34,6 +35,8 @@ void StreamEmitter::Tick(GameData* _GD)
 				particlePos = Vector2::Transform(particlePos, m_worldMat);
 				particlePos.Normalize();
 				particleDir.Normalize();
+				//Spawn the particle with the values calculated above
+
 				particle->Spawn(life, m_pos, particleDir);
 				particleSpawned = true;
 				spawnTimer -= 1.f / rate;
@@ -42,6 +45,7 @@ void StreamEmitter::Tick(GameData* _GD)
 		}
 		break;
 	}
+	//Sort the particles using the function declared above to make sure particles are being added and removed in the correct order
 	myParticles.sort(compareParticles);
 	Emitter::Tick(_GD);
 
