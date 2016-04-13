@@ -1,9 +1,47 @@
-﻿Build started 12/04/2016 10:52:54.
+﻿Build started 13/04/2016 16:03:48.
      1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" on node 2 (Build target(s)).
-     1>Lib:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Inc /ZI /nologo /W4 /WX- /Od /Oy- /D _WIN32_WINNT=0x0600 /D _WIN7_PLATFORM_UPDATE /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"libs\Win32\Debug\DirectXTK.pch" /Fo"libs\Win32\Debug\\" /Fd"libs\Win32\Debug\DirectXTK.pdb" /Gd /TP /analyze- /errorReport:prompt Src\AlphaTestEffect.cpp Src\BasicEffect.cpp Src\BinaryReader.cpp Src\CommonStates.cpp Src\DDSTextureLoader.cpp Src\DGSLEffect.cpp Src\DGSLEffectFactory.cpp
+         DGSLEffectFactory.cpp
+         DGSLEffect.cpp
+         DDSTextureLoader.cpp
+         CommonStates.cpp
+         BinaryReader.cpp
+         BasicEffect.cpp
+         AlphaTestEffect.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"libs\Win32\Debug\DirectXTK.lib" /NOLOGO libs\Win32\Debug\AlphaTestEffect.obj
+         libs\Win32\Debug\BasicEffect.obj
+         libs\Win32\Debug\CommonStates.obj
+         libs\Win32\Debug\DDSTextureLoader.obj
+         libs\Win32\Debug\DGSLEffect.obj
+         libs\Win32\Debug\DGSLEffectFactory.obj
+         libs\Win32\Debug\DualTextureEffect.obj
+         libs\Win32\Debug\BinaryReader.obj
+         libs\Win32\Debug\EffectCommon.obj
+         libs\Win32\Debug\EffectFactory.obj
+         libs\Win32\Debug\EnvironmentMapEffect.obj
+         libs\Win32\Debug\GamePad.obj
+         libs\Win32\Debug\GeometricPrimitive.obj
+         libs\Win32\Debug\Keyboard.obj
+         libs\Win32\Debug\Model.obj
+         libs\Win32\Debug\ModelLoadCMO.obj
+         libs\Win32\Debug\ModelLoadSDKMESH.obj
+         libs\Win32\Debug\ModelLoadVBO.obj
+         libs\Win32\Debug\Mouse.obj
+         libs\Win32\Debug\pch.obj
+         libs\Win32\Debug\ScreenGrab.obj
+         libs\Win32\Debug\SimpleMath.obj
+         libs\Win32\Debug\SkinnedEffect.obj
+         libs\Win32\Debug\SpriteBatch.obj
+         libs\Win32\Debug\PrimitiveBatch.obj
+         libs\Win32\Debug\SpriteFont.obj
+         libs\Win32\Debug\VertexTypes.obj
+         libs\Win32\Debug\WICTextureLoader.obj
          DirectXTK_Desktop_2013.vcxproj -> D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\libs\Win32\Debug\DirectXTK.lib
      1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.18
+Time Elapsed 00:00:02.01
