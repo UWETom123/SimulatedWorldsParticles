@@ -12,6 +12,10 @@ public:
 
 protected:
 
+	int numParticles;
+	float rate;
+	float life;
+	float speed;
 	float spread;
 	float spawnTimer;
 

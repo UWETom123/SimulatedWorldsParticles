@@ -1,10 +1,24 @@
 #include "SprayEmitter.h"
+#include "AntTweakBar.h"
 
 SprayEmitter::SprayEmitter(string _fileName, ID3D11Device* _GD, int _numParticles, float _rate, float _life, float _speed, float _spread, string _particleName) :
 				Emitter(_fileName, _GD, _numParticles, _rate, _life, _speed, _particleName)
 {
 	spawnTimer = 0;
+	numParticles = _numParticles;
+	rate = _rate;
+	life = _life;
+	speed = _speed;
 	spread = _spread;
+
+	//Setup Antweakbar to display current values of the emitter
+
+	TwBar* UI = TwNewBar("Spray Emitter values");
+	TwAddVarRO(UI, "Maximum particles:", TW_TYPE_INT32, &numParticles, "");
+	TwAddVarRO(UI, "Spawn rate:", TW_TYPE_FLOAT, &rate, "");
+	TwAddVarRO(UI, "Lifetime:", TW_TYPE_FLOAT, &life, "");
+	TwAddVarRO(UI, "Speed:", TW_TYPE_FLOAT, &speed, "");
+	TwAddVarRO(UI, "Spread:", TW_TYPE_FLOAT, &spread, "");
 }
 
 
@@ -53,8 +67,4 @@ void SprayEmitter::Tick(GameData* _GD)
 		break;
 	}
 	Emitter::Tick(_GD);
-
 }
-
-
-

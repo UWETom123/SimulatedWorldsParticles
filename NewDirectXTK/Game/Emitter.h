@@ -4,6 +4,16 @@
 #include "particle.h"
 #include <list>
 
+struct EmitterParameters
+{
+
+	int _numParticles;
+	float _rate;
+	float _life;
+	float _speed;
+
+};
+
 class Emitter :public ImageGO2D
 {
 public:
@@ -22,10 +32,10 @@ public:
 	struct EmitterParameters
 	{
 
-		int _numParticles;
-		float _rate;
-		float _life;
-		float _speed;
+		int numParticles;
+		float rate;
+		float life;
+		float speed;
 
 	};
 
@@ -37,3 +47,4 @@ protected:
 };
 
 #endif
+

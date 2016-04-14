@@ -1,4 +1,5 @@
 #include "BurstEmitter.h"
+#include "AntTweakBar.h"
 
 //BurstEmitter emits particles in a pulse and inherits from the Emitter class
 //It has modified logic inside the tick function that will cause particles to emitted in bursts depending on the values passed in
@@ -11,6 +12,19 @@ Emitter(_fileName, _GD, _numParticles, _burstRate, _life, _speed, _particleName)
 	burstRate = _burstRate;
 	numParticlesPerBurst = _numParticlesPerBurst;
 	spread = _spread;
+	numParticles = _numParticles;
+	life = _life;
+	speed = _speed;
+
+	//Setup Antweakbar to display current values of the emitter
+
+	TwBar* UI = TwNewBar("Burst Emitter values");
+	TwAddVarRO(UI, "Maximum particles:", TW_TYPE_INT32, &numParticles, "");
+	TwAddVarRO(UI, "Particles per burst", TW_TYPE_INT32, &numParticlesPerBurst, "");
+	TwAddVarRO(UI, "Burst rate:", TW_TYPE_FLOAT, &burstRate, "");
+	TwAddVarRO(UI, "Lifetime:", TW_TYPE_FLOAT, &life, "");
+	TwAddVarRO(UI, "Speed:", TW_TYPE_FLOAT, &speed, "");
+	TwAddVarRO(UI, "Spread:", TW_TYPE_FLOAT, &spread, "");
 
 }
 

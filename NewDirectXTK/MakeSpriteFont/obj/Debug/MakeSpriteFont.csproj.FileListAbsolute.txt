@@ -8,11 +8,6 @@ F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
 F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
 F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
 F:\NewDirectXTK\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb
-D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
-D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
-D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
-D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
-D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb
 F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
 F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
 F:\SimWorlds\SimulatedWorldsParticles\NewDirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache

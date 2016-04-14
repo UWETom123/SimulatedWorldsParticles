@@ -27,7 +27,7 @@ struct GameData;
 struct DrawData;
 struct DrawData2D;
 class Light;
-
+class Emitter;
 class Game
 {
 public:
@@ -38,7 +38,14 @@ public:
 	bool Update(); //tick the game state
 
 	void Render(ID3D11DeviceContext* _pd3dImmediateContext); //render the current game state
+	
 
+	//it's shit that these are public but yolo
+	int m_numParticles;
+	float m_lifeTime;
+	float m_speed;
+	float m_rate;
+	Emitter* m_emitter;
 protected:
 	DWORD m_playTime; //amount of time since the game started
 
@@ -66,7 +73,6 @@ protected:
 	GameData* m_GD;			//Data to be shared to all Game Objects as they are ticked
 	DrawData* m_DD;			//Data to be shared to all Game Objects as they are drawn
 	DrawData2D * m_DD2D;	//Data to be passed by game to all 2D Game Objects via Draw 
-
 };
 
 

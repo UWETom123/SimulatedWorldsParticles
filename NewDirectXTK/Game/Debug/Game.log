@@ -1,29 +1,5 @@
-﻿Build started 13/04/2016 16:07:03.
-     1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\\AntTweakBar_116\AntTweakBar\lib AntTweakBar64.lib d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib dinput8.lib DirectXTK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib usp10.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
-         Debug\BurstEmitter.obj
-         Debug\camera.obj
-         Debug\CMOGO.obj
-         Debug\Emitter.obj
-         Debug\game.obj
-         Debug\gameobject.obj
-         Debug\App.obj
-         Debug\GameObject2D.obj
-         Debug\ImageGO2D.obj
-         Debug\light.obj
-         Debug\main.obj
-         Debug\particle.obj
-         Debug\SprayEmitter.obj
-         Debug\StreamEmitter.obj
-         Debug\TextGO2D.obj
-         Debug\terrain.obj
-         Debug\Player.obj
-         Debug\VBGO.obj
-     1>BurstEmitter.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-         Game.vcxproj -> D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Debug\Game.exe
-     1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\Game\Game.vcxproj" (Build target(s)).
+﻿Build started 14/04/2016 06:53:51.
 
 Build succeeded.
 
-Time Elapsed 00:00:00.55
+Time Elapsed 00:00:00.01
