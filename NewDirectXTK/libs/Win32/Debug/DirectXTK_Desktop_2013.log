@@ -1,7 +1,4 @@
-﻿Build started 14/04/2016 06:53:51.
-     1>Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" on node 2 (Clean target(s)).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'd:\tommoretonsimworlds\simulatedworldsparticles\newdirectxtk\libs\win32\debug\directxtk.pch' because it is being used by another process.
-     1>Done Building Project "D:\TomMoretonSimWorlds\SimulatedWorldsParticles\NewDirectXTK\DirectXTK_Desktop_2013.vcxproj" (Clean target(s)).
+﻿Build started 14/04/2016 09:15:03.
 
 Build succeeded.
 

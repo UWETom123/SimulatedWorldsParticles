@@ -97,91 +97,33 @@ Game::Game(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance, ID3D11De
 	m_DD->m_cam = m_cam;
 	m_DD->m_light = m_light;
 
-	float lifetime;
+	//NOTE: Using more than one emitter at a time will cause graphical glitches with the HUD.
 
-	lifetime = 6;
-
-	//Adds a new BurstEmitter called testEmitter that has a modifiable burst rate and also allows you to change the amount of particles per burst as well as the standard Emitter parameters
-	Emitter* testEmitter1 = new BurstEmitter("sandParticle", _pd3dDevice, 1000, 20, 2, 5, 50, 100, "sandParticle");
+	Emitter* sprayEmitter = new SprayEmitter("white", _pd3dDevice, 1000, 20, 5, 50, 30, "sandParticle");
 	//Rotates the Emitter 180 degrees (pi in radians)
-	testEmitter1->SetRot(3.14159f);
+	sprayEmitter->SetRot(3.14159f);
 	//Starts the Emitter at the centre of the screen
-	testEmitter1->SetPos(Vector2(400, 300));
-	m_GameObject2Ds.push_back(testEmitter1);
+	sprayEmitter->SetPos(Vector2(400, 300));
+	m_GameObject2Ds.push_back(sprayEmitter);
 
-	//Emitter* testEmitter2 = new SprayEmitter("sandParticle", _pd3dDevice, 1000, 20, 5, 50, 30, "sandParticle");
-	////Rotates the Emitter 180 degrees (pi in radians)
-	//testEmitter2->SetRot(3.14159f);
-	////Starts the Emitter at the centre of the screen
-	//testEmitter2->SetPos(Vector2(500, 300));
-	//m_GameObject2Ds.push_back(testEmitter2);
+	//Uncomment below to show a spray emitter
 
-	//Emitter* testEmitter3 = new StreamEmitter("sandParticle", _pd3dDevice, 1000, 20, 5, 50, "sandParticle");
-	////Rotates the Emitter 180 degrees (pi in radians)
-	//testEmitter3->SetRot(3.14159f);
-	////Starts the Emitter at the centre of the screen
-	//testEmitter3->SetPos(Vector2(600, 300));
-	//m_GameObject2Ds.push_back(testEmitter3);
+	//Emitter* streamEmitter = new StreamEmitter("white", _pd3dDevice, 1000, 20, 5, 50, "sandParticle");
+	//Rotates the Emitter 180 degrees (pi in radians)
+	//streamEmitter->SetRot(3.14159f);
+	//Starts the Emitter at the centre of the screen
+	//streamEmitter->SetPos(Vector2(400, 300));
+	//m_GameObject2Ds.push_back(streamEmitter);
 
-//
-//	//add a secondary camera
-//	m_TPScam = new TPSCamera(0.25f * XM_PI, AR, 1.0f, 10000.0f, pPlayer, Vector3::UnitY, Vector3(0.0f, 10.0f, 50.0f));
-//	m_GameObjects.push_back(m_TPScam);
-//
-//	Terrain* terrain = new Terrain("table.cmo", _pd3dDevice, m_fxFactory, Vector3(100.0f, 0.0f, 100.0f), 0.0f, 0.0f, 0.0f, 0.25f * Vector3::One);
-//	m_GameObjects.push_back(terrain);
-//
-//	//add some stuff to show off
-//
-//	FileVBGO* terrainBox = new FileVBGO("../Assets/terrainTex.txt", _pd3dDevice);
-//	m_GameObjects.push_back(terrainBox);
-//
-//	FileVBGO* Box = new FileVBGO("../Assets/cube.txt", _pd3dDevice);
-//	m_GameObjects.push_back(Box);
-//	Box->SetPos(Vector3(0.0f, 0.0f, -100.0f));
-//	Box->SetPitch(XM_PIDIV4);
-//	Box->SetScale(20.0f);
-//
-//	//L-system like tree
-//	m_GameObjects.push_back(new Tree(4, 4, .6f, 10.0f *Vector3::Up, XM_PI/6.0f, "JEMINA vase -up.cmo", _pd3dDevice, m_fxFactory));
-//
-//	VBCube* cube = new VBCube();
-//	cube->init(11, _pd3dDevice);
-//	cube->SetPos(Vector3(100.0f, 0.0f, 0.0f));
-//	cube->SetScale(4.0f);
-//	m_GameObjects.push_back(cube);
-//
-//	VBSpike* spikes = new VBSpike();
-//	spikes->init(11, _pd3dDevice);
-//	spikes->SetPos(Vector3(0.0f, 0.0f, 100.0f));
-//	spikes->SetScale(4.0f);
-//	m_GameObjects.push_back(spikes);
-//
-//	VBSpiral* spiral = new VBSpiral();
-//	spiral->init(11, _pd3dDevice);
-//	spiral->SetPos(Vector3(-100.0f, 0.0f, 0.0f));
-//	spiral->SetScale(4.0f);
-//	m_GameObjects.push_back(spiral);
-//
-//	VBPillow* pillow = new VBPillow();
-//	pillow->init(11, _pd3dDevice);
-//	pillow->SetPos(Vector3(-100.0f, 0.0f, -100.0f));
-//	pillow->SetScale(4.0f);
-//	m_GameObjects.push_back(pillow);
-//
-//	VBSnail* snail = new VBSnail(_pd3dDevice, "../Assets/baseline.txt", 150, 0.98, 0.09f * XM_PI, 0.4f, Color(1.0f, 0.0f, 0.0f, 1.0f), Color(0.0f, 0.0f, 1.0f, 1.0f));
-//	snail->SetPos(Vector3(-100.0f, 0.0f, 100.0f));
-//	snail->SetScale(2.0f);
-//	m_GameObjects.push_back(snail);
-//
-//	ImageGO2D* logo = new ImageGO2D("logo_small", _pd3dDevice);
-//	logo->SetPos(200.0f * Vector2::One);
-//	m_GameObject2Ds.push_back(logo);
-//
-//	TextGO2D* text = new TextGO2D("Test Text");
-//	text->SetPos(Vector2(100,10));
-//	text->SetColour(Color((float*)&Colors::Yellow));
-//	m_GameObject2Ds.push_back(text);
+	//Uncomment below to show a stream emitter
+
+	//Emitter* burstEmitter = new BurstEmitter("white", _pd3dDevice, 1000, 20, 2, 5, 50, 100, "sandParticle");
+	//Rotates the Emitter 180 degrees (pi in radians)
+	//burstEmitter->SetRot(3.14159f);
+	//Starts the Emitter at the centre of the screen
+	//burstEmitter->SetPos(Vector2(400, 300));
+	//m_GameObject2Ds.push_back(burstEmitter);
+
 }
 
 Game::~Game()

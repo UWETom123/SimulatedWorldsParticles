@@ -4,16 +4,6 @@
 #include "particle.h"
 #include <list>
 
-struct EmitterParameters
-{
-
-	int _numParticles;
-	float _rate;
-	float _life;
-	float _speed;
-
-};
-
 class Emitter :public ImageGO2D
 {
 public:
@@ -25,23 +15,14 @@ public:
 
 	list<Particle*> myParticles;
 
-	float life;
-
-	float rate;
-
-	struct EmitterParameters
-	{
-
-		int numParticles;
-		float rate;
-		float life;
-		float speed;
-
-	};
-
 protected:
 
+	int _numParticles;
+	float _rate;
+	float _life;
+	float _speed;
 	float time;
+
 	ID3D11ShaderResourceView* m_pTextureRV;
 
 };
